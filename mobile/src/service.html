@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Služby - Mobile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/service.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="column1">
+            <ul>
+                <li><a href="index.html">Domov</a></li>
+                <li><a href="omne.html">O Mne</a></li>
+                <li>
+                    <a href="galeria.html">
+                        Galéria
+                        <img src="images/image.png" alt="Gallery Icon" style="vertical-align: middle; margin-left: 5px;">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="column2">
+            <ul>
+                <li>
+                    <a href="service.html">
+                        Služby
+                        <img src="images/wrench.png" alt="Services Icon" style="vertical-align: middle; margin-left: 5px;">
+                    </a>
+                </li>
+                <li>
+                    <a href="cennik.html">
+                        Cenník
+                        <img src="images/eur.png" alt="Pricing Icon" style="vertical-align: middle; margin-left: 5px;">
+                    </a>
+                </li>
+                <li>
+                    <a href="kontakt.html">
+                        Kontakt
+                        <img src="images/kontakt.png" alt="Contact Icon" style="vertical-align: middle; margin-left: 5px;">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="stack-area">
+            <div class="left">
+                <div class="title">Služby</div>
+                <div class="sub-title">
+                    Spoľahlivá pomoc pre váš domov!
+                    Postarám sa o opravy, montáže aj údržbu 
+                    rýchlo, kvalitne a bez starostí. Stačí zavolať! 
+                    <br />
+                    <button onclick="window.location.href='kontakt.html'">Kontaktujte Ma!</button>
+                </div>
+            </div>
+            <div class="right">
+                <div class="card" id="vodoinstalacie">
+                    <div class="sub">Vodoinštalácie</div>
+                    <img src="images/sluzby-obrazky/vodo-instalacie.png" alt="Vodo Instalacie" class="card-image">
+                    <div class="content">Oprava WC, potrubí a montáž drezov spoľahlivo a bez starostí</div>
+                </div>
+                <div class="card" id="elektroinstalacie">
+                    <div class="sub">Elektroinštalácie</div>
+                    <img src="images/sluzby-obrazky/elektro-instalacie.png" alt="Elektro Instalacie" class="card-image">
+                    <div class="content">Montáž a opravy zásuviek, svietidiel a elektroinštalácie bezpečne.</div>
+                </div>
+                <div class="card" id="kurenie">
+                    <div class="sub">Kúrenie</div>
+                    <img src="images/sluzby-obrazky/kurenie.png" alt="Kurenie" class="card-image">
+                    <div class="content">Dopúšťanie vody do systému, odvzdušnenie radiátorov. Výmena ventilov, servis a revízia kotla či komína.</div>
+                </div>
+                <div class="card" id="murar">
+                    <div class="sub">Murárske práce</div>
+                    <img src="images/sluzby-obrazky/murar.png" alt="Murar" class="card-image">
+                    <div class="content">Maľovanie interiérov, exteriérov, plotov a prístreškov. Opravy stien a stropov pre dokonalý vzhľad.</div>
+                </div>
+                <div class="card" id="zamocnicke-prace">
+                    <div class="sub">Zámočnícke Práce</div>
+                    <img src="images/sluzby-obrazky/zamocnicke-prace.png" alt="Zámočnícke Práce" class="card-image">
+                    <div class="content small-text">Poskytujem zámočnícke služby pre váš domov. Pomôžem s opravou a montážou zámkov, bezpečnostných dverí a ďalších zámočníckych prác.</div>
+                </div>
+                <div class="card" id="zahradne-prace">
+                    <div class="sub">Záhradné práce</div>
+                    <img src="images/sluzby-obrazky/zahradne-prace.png" alt="Záhradné práce" class="card-image">
+                    <div class="content">Údržba záhrad, kosenie trávnikov, strihanie živých plotov a ďalšie záhradné práce.</div>
+                </div>
+                <div class="card" id="auto-opravarske-sluzby">
+                    <div class="sub">Auto opravárske služby</div>
+                    <img src="images/sluzby-obrazky/auto-opravarske-sluzby.png" alt="Auto opravárske služby" class="card-image">
+                    <div class="content">Výmena oleja, výmena pripravku do ostrekovačov ale aj čistenie auta a výmena pneumatík.</div>
+                </div>
+                <div class="card" id="dalsie-sluzby">
+                    <div class="sub">Dalšie služby</div>
+                    <div class="content">Poskytujem aj ďalšie služby pre váš domov. Ak potrebujete pomoc s inými úlohami, kontaktujte ma.</div>
+                </div>
+            </div>
+        </div>
+        <button class="kontaktbuttond" onclick="window.location.href='kontakt.html'">Kontaktujte Ma!</button>
+    </main>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

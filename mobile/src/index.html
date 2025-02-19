@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Project - Mobile</title>
+    <link rel="stylesheet" href="styles/main.css"> <!-- Ensure this path is correct -->
+</head>
+<body>
+    <nav class="navbar">
+        <div class="column1">
+            <ul>
+                <li><a href="index.html">Domov</a></li>
+                <li><a href="omne.html">O Mne</a></li>
+                <li>
+                    <a href="galeria.html">
+                        Galéria
+                        <img src="images/image.png" alt="Gallery Icon" style="vertical-align: middle; margin-left: 5px;">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="column2">
+            <ul>
+                <li>
+                    <a href="service.html">
+                        Služby
+                        <img src="images/wrench.png" alt="Services Icon" style="vertical-align: middle; margin-left: 5px;">
+                    </a>
+                </li>
+                <li>
+                    <a href="cennik.html">
+                        Cenník
+                        <img src="images/eur.png" alt="Pricing Icon" style="vertical-align: middle; margin-left: 5px;">
+                    </a>
+                </li>
+                <li>
+                    <a href="kontakt.html">
+                        Kontakt
+                        <img src="images/kontakt.png" alt="Contact Icon" style="vertical-align: middle; margin-left: 5px;">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="intro-box">
+            <h1>Spoľahlivá pomoc pre váš domov</h1>
+            <p>Potrebujete opraviť, namontovať alebo vymeniť niečo v domácnosti? Som tu pre vás! Rýchlo a spoľahlivo vyriešime vaše požiadavky.</p>
+        </div>
+        
+        <div class="services-box">
+            <h2>Naše služby zahŕňajú:</h2>
+            <ul class="services-list">
+                <li>Opravy a montáž nábytku</li>
+                <li>Elektroinštalačné práce</li>
+                <li>Vodoinštalačné opravy</li>
+                <li>Maľovanie a malé stavebné úpravy</li>
+                <li>Opravy dverí, okien a zámkov</li>
+                <li>Montáž svietidiel, políc a závesov</li>
+            </ul>
+            <button class="service-button" onclick="window.location.href='service.html'">Zobraziť všetky služby</button>
+        </div>
+        <h2>Už ste sa rozhodli? Kontaktujte nás!</h2>
+        <p>Zavolajte nám na <strong>+421 123 456 789</strong> alebo kliknite na tlačidlo nižšie:</p>
+        <div class="contact-buttons">
+            <a href="tel:+421123456789" class="contact-button">Zavolať teraz</a>
+            <a href="kontakt.html" class="contact-button">Kontaktný formulár</a>
+        </div>
+    </main>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

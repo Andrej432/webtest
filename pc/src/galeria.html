@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Another Page 1</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="#" id="sidebarToggle">
+                    <span class="menu-icon-text">
+                        <img src="images/menu.png" alt="Menu Icon" style="vertical-align: middle; margin-right: 5px;">
+                        Domov
+                    </span>
+                </a>
+            </li>
+            <li><a href="omne.html">O Mne</a></li>
+            <li>
+                <a href="galeria.html">
+                    Galéria
+                    <img src="images/image.png" alt="Gallery Icon" style="vertical-align: middle; margin-left: 5px;">
+                </a>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">
+                    Služby
+                    <img src="images/wrench.png" alt="Services Icon" style="vertical-align: middle; margin-left: 5px;">
+                </a>
+                <div class="dropdown-content">
+                    <a href="service.html">Služby</a>
+                    <a href="javascript:void(0)" onclick="scrollToSection(0)">Vodoinštalácie</a>
+                    <a href="javascript:void(0)" onclick="scrollToSection(1)">Elektroinštalácie</a>
+                    <a href="javascript:void(0)" onclick="scrollToSection(2)">Kúrenie</a>
+                    <a href="javascript:void(0)" onclick="scrollToSection(3)">Murárske práce</a>
+                    <a href="javascript:void(0)" onclick="scrollToSection(4)">Dalšie Práce</a>
+                </div>
+            </li>
+            <li>
+                <a href="cennik.html">
+                    Cenník
+                    <img src="images/eur.png" alt="Pricing Icon" style="vertical-align: middle; margin-left: 5px;">
+                </a>
+            </li>
+            <li>
+                <a href="kontakt.html">
+                    Kontakt
+                    <img src="images/kontakt.png" alt="Contact Icon" style="vertical-align: middle; margin-left: 5px;">
+                </a>
+            </li>
+            <li style="margin-left: auto;">
+                <a href="index.html">
+                    <img src="images/logo-mechanik.png" alt="Mechanik Logo" class="logo">
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <img src="images/logo-mechanik.png" alt="Mechanik Logo" class="sidebar-logo">
+            <a href="#" class="closebtn" id="closeSidebar">&times;</a>
+        </div>
+
+        <button class="button-link">Úvod</button>
+        <button onclick="location.href='service.html'">Služby</button>
+        <button>Button 3</button>
+        <button>Button 4</button>
+        <button>Button 5</button>
+        <button>Button 6</button>
+        <button>Button 7</button>
+        <hr>
+        <div class="sidebar-text">+421 0000 000 000</div>
+    </div>
+    <div id="overlay" class="overlay"></div>
+    <main>
+        <h1>Welcome to Galéria</h1>
+        <p>This is another page of the website.</p>
+    </main>
+    <script src="scripts/main.js"></script>
+    <script>
+        function scrollToSection(index) {
+            sessionStorage.setItem('scrollToSection', index);
+            window.location.href = 'service.html';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function isMobileDevice() {
+                return /Mobi|Android/i.test(navigator.userAgent);
+            }
+
+            if (isMobileDevice()) {
+                window.location.href = "/mobile/src/index.html";
+            } else {
+                window.location.href = "/pc/src/index.html";
+            }
+        });
+    </script>
+</head>
+<body>
+    <p>Redirecting, please wait...</p>
+</body>
+</html>

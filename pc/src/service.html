@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Page</title>
+    <meta name="description" content="A page showcasing services.">
+    <meta name="keywords" content="services, features, design">
+    <meta name="author" content="Your Name">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/service.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="#" id="sidebarToggle">
+                    <span class="menu-icon-text">
+                        <img src="images/menu.png" alt="Menu Icon" style="vertical-align: middle; margin-right: 5px;">
+                        Domov
+                    </span>
+                </a>
+            </li>
+            <li><a href="omne.html">O Mne</a></li>
+            <li><a href="galeria.html">
+    Galéria
+    <img src="images/image.png" alt="Gallery Icon" style="vertical-align: middle; margin-left: 5px;">
+</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">
+                    Služby
+                    <img src="images/wrench.png" alt="Services Icon" style="vertical-align: middle; margin-left: 5px;">
+                </a>
+                <div class="dropdown-content">
+                    <a href="service.html">Služby</a>
+                    <a href="javascript:void(0)" onclick="scrollToSection(0)">Vodoinštalácie</a>
+                    <a href="javascript:void(0)" onclick="scrollToSection(1)">Elektroinštalácie</a>
+                    <a href="javascript:void(0)" onclick="scrollToSection(2)">Kúrenie</a>
+                    <a href="javascript:void(0)" onclick="scrollToSection(3)">Murárske práce</a>
+                    <a href="javascript:void(0)" onclick="scrollToSection(4)">Dalšie Práce</a>
+                </div>
+            </li>
+            <li>
+                <a href="cennik.html">
+                    Cenník
+                    <img src="images/eur.png" alt="Pricing Icon" style="vertical-align: middle; margin-left: 5px;">
+                </a>
+            </li>
+            <li>
+                <a href="kontakt.html">
+                    Kontakt
+                    <img src="images/kontakt.png" alt="Contact Icon" style="vertical-align: middle; margin-left: 5px;">
+                </a>
+            </li>
+            <li style="margin-left: auto;">
+                <a href="index.html">
+                    <img src="images/logo-mechanik.png" alt="Mechanik Logo" class="logo">
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <img src="images/logo-mechanik.png" alt="Mechanik Logo" class="sidebar-logo">
+            <a href="#" class="closebtn" id="closeSidebar">&times;</a>
+        </div>
+        <button class="button-link">Úvod</button>
+        <button onclick="location.href='service.html'">Služby</button>
+        <button>Button 3</button>
+        <button>Button 4</button>
+        <button>Button 5</button>
+        <button>Button 6</button>
+        <button>Button 7</button>
+        <hr>
+        <div class="sidebar-text">+421 0000 000 000</div>
+    </div>
+    <div id="overlay" class="overlay"></div>
+    <main>
+        <div class="stack-area">
+            <div class="left">
+                <div class="title">Služby</div>
+                <div class="sub-title">
+                    Spoľahlivá pomoc pre váš domov!
+                    Postarám sa o opravy, montáže aj údržbu 
+                    rýchlo, kvalitne a bez starostí. Stačí zavolať! 
+                    <br />
+                    <button onclick="window.location.href='kontakt.html'">Kontaktujte Ma!</button>
+                </div>
+            </div>
+            <div class="right">
+                <div class="card" id="vodoinstalacie">
+                    <div class="sub">Vodoinštalácie</div>
+                    <img src="images/sluzby-obrazky/vodo-instalacie.png" alt="Vodo Instalacie" class="card-image">
+                    <div class="content">Oprava WC, potrubí a montáž drezov spoľahlivo a bez starostí</div>
+                </div>
+                <div class="card" id="elektroinstalacie">
+                    <div class="sub">Elektroinštalácie</div>
+                    <img src="images/sluzby-obrazky/elektro-instalacie.png" alt="Elektro Instalacie" class="card-image">
+                    <div class="content">Montáž a opravy zásuviek, svietidiel a elektroinštalácie bezpečne.</div>
+                </div>
+                <div class="card" id="kurenie">
+                    <div class="sub">Kúrenie</div>
+                    <img src="images/sluzby-obrazky/kurenie.png" alt="Kurenie" class="card-image">
+                    <div class="content">Dopúšťanie vody do systému, odvzdušnenie radiátorov. Výmena ventilov, servis a revízia kotla či komína.</div>
+                </div>
+                <div class="card" id="murar">
+                    <div class="sub">Murárske práce</div>
+                    <img src="images/sluzby-obrazky/murar.png" alt="Murar" class="card-image">
+                    <div class="content">Maľovanie interiérov, exteriérov, plotov a prístreškov. Opravy stien a stropov pre dokonalý vzhľad.</div>
+                </div>
+                <div class="card" id="ine">
+                    <div class="sub">Dalšie Práce</div>
+                    <img src="images/sluzby-obrazky/ine.png" alt="Ine" class="card-image">
+                    <div class="content small-text">Poskytujem aj dalšie služby pre váš domov. Pomôžem s montážou nábytku a inštaláciou políc. Zabezpečím aj záhradné práce. Ponúkam tiež čistenie odkvapov a drobné sťahovacie služby. Ak potrebujete pomoc s inými úlohami, kontaktujte ma.</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/service.js"></script>
+    <script>
+        function scrollToSection(index) {
+            sessionStorage.setItem('scrollToSection', index);
+            window.location.href = 'service.html';
+        }
+
+        function scrollToBottom() {
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>

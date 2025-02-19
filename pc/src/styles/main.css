@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: rgba(156, 232, 254, 0.765);
+    border-bottom: 1px solid #ccc;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a small shadow */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center; /* Ensure items are vertically centered */
+}
+
+nav ul li {
+    margin-right: 20px;
+    position: relative; /* Ensure the pseudo-element is positioned correctly */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: rgb(95, 215, 255); /* Change text color to light blue on hover */
+}
+
+.navbar img {
+    width: 20px; /* Adjust the size as needed */
+    height: auto;
+    margin-right: 5px; /* Space between the icon and the text */
+    vertical-align: middle;
+}
+
+.navbar .menu-icon-text {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .menu-icon-text img {
+    width: 20px; /* Adjust the size as needed */
+    height: auto;
+    margin-right: 5px; /* Space between the icon and the text */
+}
+
+.navbar .logo {
+    height: 40px; /* Set a fixed height for the logo */
+    width: auto; /* Maintain aspect ratio */
+    margin-left: auto; /* Push the logo to the right */
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    max-width: 250px; /* Set a new maximum width for the sidebar */
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color:rgba(58, 203, 243, 0.965);
+    overflow: hidden; /* Make the sidebar not scrollable */
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar hr {
+    border: 0;
+    border-top: 1px solid rgb(255, 255, 255);;
+    margin: 15px 0; /* Adjust margin for spacing */
+}
+
+.sidebar button {
+    display: block;
+    width: 100%;
+    padding: 15px; /* Decrease padding for smaller buttons */
+    margin: 0; /* Remove all margin for no spacing */
+    background-color: rgba(190, 240, 254, 0.965);
+    color: rgb(9, 9, 9);
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 20px; /* Increase font size for bigger buttons */
+    transition: background-color 0.3s;
+}
+
+.sidebar button:hover {
+    background-color: rgb(81, 188, 255);
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    margin-bottom: 0; 
+    text-decoration: none; 
+    line-height: 1; 
+    color: black; 
+    font-family: Arial, sans-serif; /* Ensure the font is set correctly */
+}
+
+#sidebarToggle {
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.098); /* Even less dark */
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s; /* Fade-in effect */
+}
+
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+/* New code for vertical line */
+.navbar ul li {
+    margin-right: 20px;
+    position: relative; /* Ensure the pseudo-element is positioned correctly */
+}
+
+.navbar ul li:first-child {
+    border-right: 1px solid #ccc; /* Add vertical line to the right of the first list item */
+    padding-right: 20px; /* Add padding to the right to create space for the line */
+}
+
+.navbar ul li:first-child::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #ccc;
+}
+
+/* Center the text in the sidebar */
+.sidebar .sidebar-text {
+    display: flex;
+    justify-content: center;
+    height: 100%; /* Fill the remaining space */
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    font-weight: bold; /* Make the text bold */
+    padding: 10px 0; /* Add padding for spacing */
+    margin-top: 1cm; /* Add space between the line and the text */
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(58, 203, 243, 0.965); /* Match the sidebar background color */
+}
+
+.sidebar-logo {
+    height: 40px; /* Set a fixed height for the logo */
+    width: auto; /* Maintain aspect ratio */
+    margin-left: 10px; /* Add some margin to the left */
+}
+
+.sidebar .closebtn {
+    font-size: 36px;
+    text-decoration: none; /* Ensure no underline */
+    line-height: 1; /* Ensure no extra line height */
+    color: black; /* Change color to black */
+    font-family: Arial, sans-serif; /* Ensure the font is set correctly */
+    margin-right: 10px; /* Add some margin to the right */
+    margin-left: auto; /* Push the close button to the right */
+}
+
+.sidebar button.button-link {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+    background-color: rgba(190, 240, 254, 0.965);
+    color: rgb(9, 9, 9);
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.sidebar button.button-link:hover {
+    background-color: rgb(92, 214, 255);
+}
+
+.navbar .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.navbar .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar .dropdown-content a:first-child {
+    font-size: 1.2em; /* Increase the font size for the first button */
+}
+
+.navbar .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.navbar .dropdown:hover .dropdown-content {
+    display: block;
+}

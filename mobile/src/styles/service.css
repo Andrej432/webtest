@@ -1,0 +1,128 @@
+body {
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+}
+
+.stack-area {
+    width: 100%;
+    position: relative;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    font-size: 36px;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.sub-title {
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.sub-title button {
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    padding: 10px 20px;
+    background: rgb(21, 62, 185);
+    color: white;
+    border-radius: 3mm;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.card {
+    width: 90%;
+    max-width: 400px;
+    margin: 20px 0;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card img {
+    width: 80%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.sub {
+    font-family: Poppins, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.content {
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.small-text {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.card#vodoinstalacie {
+    background: rgb(124, 144, 248);
+}
+
+.card#elektroinstalacie {
+    background: rgb(219, 53, 84);
+}
+
+.card#kurenie {
+    background: rgb(53, 223, 236);
+}
+
+.card#murar {
+    background: rgb(41, 237, 182);
+}
+
+.card#zamocnicke-prace {
+    background: rgb(255, 204, 153);
+}
+
+.card#zahradne-prace {
+    background: rgb(228, 231, 90);
+}
+
+.card#auto-opravarske-sluzby {
+    background: rgb(255, 153, 51);
+}
+
+.card#dalsie-sluzby {
+    background: rgb(200, 200, 200);
+}
+.kontaktbuttond {
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    padding: 10px 20px;
+    background: rgb(21, 62, 185);
+    color: white;
+    border-radius: 3mm;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
